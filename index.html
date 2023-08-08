@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE-edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title> My Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="mediaquaries.css">
+
+
+    </head>
+    <body>
+        <nav id="desktop-nav">
+            <div class="logo">Swasthik Acharya</div>
+            <div>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#project">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <nav id="hamburger-nav">
+            <div class="logo">Swasthik Acharya</div>
+              <div class="hamburger-menu"> 
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                <div class="menu-links">
+                    <li><a href="#about" onclick="toggleMenu()" >About</a></li>
+                    <li><a href="#project" onclick="toggleMenu()">Projects</a></li>
+                    <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                </div>
+             </div>
+        </nav>
+        <section id="profile">
+            <div class="section__pic-container">
+                <img src="./assets/profile-pic.png" alt="Swasthik profile picture"/>
+            </div>
+            <div class="section__text">
+                <p class="section___text__p1">Hello, I'm</p>
+                <h1 class="title">Swasthik Acharya</h1>
+                <p class="section___text__p2">Student at AJIET|ISE</p>
+                <div clas="btn-container">
+                    <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">Download CV</button>
+                    <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact</button>
+                </div>
+                <div class="socials-container">
+                    <img src="./assets/linkedin.png"
+                    alt="My LinkedIn profile"
+                    class="icon"
+                    onclick="location.href='https://linkedin.com/in/swasthik-acharya-027751249/'"/>
+                    <img src="./assets/github.png"
+                    alt="My GitHub profile"
+                    class="icon"
+                    onclick="location.href='https://github.com/Swasthik2306/'"/>
+                </div>
+            </div>
+        </section>
+       <section>
+        <p class="section___text__p1">Get To Know Here</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/about-pic.png" alt="Profile Picture" class="about-pic"/>
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="Education Icon" class="icon"/>
+                        <h2>Education</h2>
+                        <h4>Bachelor of Engineering [Information science and Engineering]</h4>
+                        <h5>A J Institute of Engineering and Technology, Mangaluru</h5>
+                        <p>Year of passing 2024(Expected to complete)</p>
+                          
+                             <h4>Pre University [PCMC]</h4>
+                        <h5>Dr.N.S.A.M PU College, Nanthur Cross,Mangaluru</h5>
+                        <p>Year of passing(2020)</p>
+                         
+
+                            <h4>S.S.L.C</h4>
+                            <h5>Saint Antony High School, Kutinopadavu,Mangaluru </h5>
+                            <p>Year of passing(2018)</p>
+                             
+                    </div>
+                </div>
+            </div>
+        </div>
+
+       </section>
+        <script src="script.js"></script>
+    </body>
+
+</html>
